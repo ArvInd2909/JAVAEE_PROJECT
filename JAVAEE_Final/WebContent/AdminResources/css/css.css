@@ -1,0 +1,51 @@
+
+body{
+    background-color: rgb(206, 199, 190);
+    /* margin-left: 200px; */
+}
+h1{
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(102, 37, 11);
+}
+label{
+    align-content: center;
+    color: darkslategray;
+    font-weight: bold;
+}
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f1f1f1;
+}
+button{
+    background-color: rgb(143, 73, 73);
+    color: white;
+    text-shadow: rgb(83, 138, 132);
+    width: 10%;
+    font-size: medium;
+}   
+button:hover{
+    background-color: rgb(62, 134, 62);
+    color:ghostwhite ;
+    text-shadow:darkblue 2px;
+}
+.container{
+    
+    padding: 20px;
+    text-align: center;
+}
+a{
+    color: firebrick;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    color: blue;
+}

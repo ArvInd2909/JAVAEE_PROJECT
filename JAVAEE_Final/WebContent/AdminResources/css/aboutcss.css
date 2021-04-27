@@ -1,0 +1,1096 @@
+div{
+	margin:0px;
+	padding:0px;
+}
+#logo{
+	margin-left:100px;
+	padding:5px;
+}
+#hdr{
+		background-color:white;
+		
+		height:auto;
+		
+}
+#Sign{
+  margin-left: 42%;
+  width: 12%;
+}
+
+#log{
+  width: 12%;
+}
+.top-right {font-style:italic;
+  position: absolute;
+  top: 85%;
+  left:18%;
+  font-size:40px;
+  background-color:rgba(200,200,200,.3);
+  font-family:sans-serif;
+  color:#E6E6FA;
+}
+.event_type{
+	float:left;
+	width: 25%;
+	padding-top:5%;
+	padding-right:1%;
+	height:inherit;
+	height:fixed;
+}
+.event_type:after{
+	clear: both;
+}
+#num{
+	float:left;
+	margin-top:2%;
+	padding-right:10px;
+
+}
+#main{
+	clear:both;
+}
+#review{
+	display:inline-block;
+	justify-content:center;
+	width:100%;
+	
+}
+.footer{
+	content: "";
+	clear: both;
+}
+.footer{
+	background-color:#F7F7F7;
+	padding: 0px 20px 20px 20px;
+	text-align:center;
+}
+.footer a{
+	padding:0px 5px;
+	color:black;
+	text-decoration: none; 
+}
+.footer a:hover{
+	color: white;
+	text-decoration: none;
+}
+#footerlogo{
+	width:50px;
+	height:50px;
+	
+	
+}
+.close {
+	float:right;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	padding: 12px 16px;
+	transform: translate(0%, -50%);
+}
+.close:hover {background: #bbb;}
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+
+/* @media only screen and (max-device-width: 600px) {
+    .top-right{display:none;}
+} */
+
+ul{
+	margin-block-start:0em;
+	margin-block-end:0em;
+	}
+#mainbody{
+	clear:both;
+}
+#imgg{
+	margin-top:-5px;
+	width:100%;
+	height:500px;
+	background-size:cover;
+}
+
+.container {
+  position: relative;
+  margin-top:-5px;
+  width: 100%;
+  margin-bottom:1px;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+
+}
+
+/* Style the button and place it in the middle of the container/image */
+.btn {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  
+  
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  background-color:rgba(200, 200, 200, 0.8);
+  color: white;
+  font-size: 1.2em;
+  font-weight:bold;
+  border:3px solid white;
+  padding: 1% 2%;
+  /*border: 2px solid white;*/
+  
+  cursor: pointer;
+  
+}
+
+
+.btn:hover {
+  background-color: #98FB98;
+  color:white;
+  font-size:20px;
+  border:2px solid white;
+}
+.btn2 {
+  position: absolute;
+  top: 20%;
+  left: 87%;
+ 
+  
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:rgba(100,255,150,.8);
+  color:white;
+  font-size: 1.2em;
+  padding: 1% 2%;
+  font-weight:bold;
+  border: 3px solid white;
+  
+  cursor: pointer;
+
+  
+}
+.btn a{
+	text-decoration: none;
+	color: #000000;
+}
+.btn2 a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.btn2:hover {
+  background-color: #26ed90;
+  color:white;
+  font-size:20px;
+  border:3px solid white;;
+}
+
+
+/* Top right text */
+
+.link a:hover{
+	color: black;
+}
+* {
+  box-sizing: border-box;
+  
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+
+
+  
+}
+
+#left {
+background-color: gainsboro;
+  float:left;
+  width:25%;
+  padding-left:20px;
+  padding-top:20px;
+  padding-right:20px;
+  padding-bottom:25px;
+  height: 800px;
+}
+.right {
+  width: 75%;
+  float:left;
+  text-align: justify;
+  padding-left:20px;
+  padding-top:20px;
+  padding-right:20px;
+  padding-bottom:25px;
+ height:800px;
+}
+.desc{
+	width: 100%;
+	height:100%;
+	background-color:#E6E6FA;
+}
+.Info_event{
+	float: left;
+	width: 75%;
+}
+.Info_event{
+	padding: 1% 1% 0% 1%;
+	height:100%;
+	background-color:#E6E6FA;
+}
+.Info_event h1{
+	color:#6D0B24;
+	text-decoration: underline;
+}
+.Info_event{
+	padding:2% 5%;
+	text-align: justify;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 700px) {
+  #left {
+    width: 100%;
+  }
+  .right{
+	  width:100%;
+  }
+  #left,.right{
+	  height:auto;
+  }
+  .flip-card{
+	  margin:0;
+  }
+  .data input{
+	float:left;
+	width: 100%;
+	margin-right:0;
+} 
+.data select{
+	margin-right:0;
+	float:left;
+	width: 100%;
+	
+}
+.data textarea{
+	margin-right:0;
+	float:left;	
+	width: 100%;
+	margin-top:1.25%;
+}
+  
+
+}
+@media screen and (max-width: 1000px) {
+	.top-right{
+	  display:none;
+  }
+} */
+
+
+
+#a1{
+	text-align:center;
+}
+
+.book1{
+background-color: 	#E6E6FA ;
+}
+
+
+.book1 a{
+	color:#2874A6;
+	font-weight:bold;
+	text-decoration: none;
+}
+.book1 button{
+	margin-right: 10px;
+}
+.Order {
+  clear:all;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 120%;/*
+  margin: 4px 4px;*/
+  cursor: pointer;
+  border-radius:100%;
+   
+
+ }
+.Order:hover{
+background-color:yellow;
+color:black;
+}
+.book1 ul{
+	list-style-type: none;
+	margin-left:-5%;  
+	
+}
+.book1 li{
+	clear:both;
+	font-family:sans-serif;
+	clear:all;
+	color:#2874A6 ;
+	
+	
+	padding:5px 5px; 
+	
+}
+.book1 a:hover{
+	
+	font-size:18px;
+	color:#DC143C;
+	
+}
+.book1 h3{
+	font-size:140%;
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:1%;
+	color:#EC7063;
+	border-bottom: 3px solid black;
+	
+}
+.test1{
+	font-family:"Signika-Bold";
+	font-style:italic;
+	
+	background-color:#f5f5dc;
+}
+.test1 h2{
+	font-family:sans-serif;
+	font-style:normal;
+	color:#0099CC;
+	padding-left:5%;
+	padding-top:10px; 
+}
+.test1 p{
+	font-size: 120%
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #AED6F1 ;
+  color: black;
+  font-size:15px;
+   font-weight:bold;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2874A6;
+}
+
+
+ul li{
+	margin-bottom:20px;
+}
+.flip-card{
+	text-align: center;
+}
+#review{
+	text-align:center;
+	background-color:	#F0F8FF;
+	height:auto;
+	margin-top:0px;
+	padding-bottom:50px;
+}
+#rp{
+	text-align:center;
+	font-weight:bold;
+	color:#0000FF;
+	font-family:sans-serif;
+	padding-top:10px;
+	font-size:30px;
+}
+
+body {
+	background-color:#F7F7F7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#r1{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display:inline-block;
+  margin:0% 5%;
+  margin-bottom:20px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #F0F8FF;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+ 
+}
+
+.checked {
+  color: orange;
+}
+/* #media{
+	
+} */
+#Google a::before
+{
+	content:"\f0d4"
+}
+
+.wrapper {	
+  float:right;
+  align-items: center;
+  height: auto;
+  margin-top:5px;
+  margin-right:20px;
+}
+.wrapper i {
+ 
+  padding: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
+}
+.wrapper a:nth-child(1) {
+  color: #dd4b39;
+}
+.wrapper a:nth-child(2) {
+  color: #4867AA;
+}
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+}
+.wrapper a:nth-child(4) {
+  color: #4867AA;
+}
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+.bottom{
+	background-image:url("../img/images.jfif");
+	height: 990px;
+}
+.raw_2{
+	width:100%;
+}  
+#left select{ 
+	width: 100%;
+}
+
+.right h1{
+	size: 100%;
+	color: blue;
+}
+.Info a{
+	text-decoration:none;
+	color: #1ABC9C;
+}
+.Info h2 {
+    font-style: italic;
+    color: #1ABC9C;
+    font-family: "Calisto MT";
+    font-size: 28px;
+}
+.Info a:hover{
+	color: blue;
+}
+.link text{
+	text-decoration:underline; 
+	color: #1E8449;
+}
+.link a{
+	text-decoration:none;
+	color: Black;
+}
+.link a:hover{
+	color:#008000;
+	text-decoration: underline;
+}
+.w3-content,.w3-auto{
+	margin-left:auto;margin-right:auto;
+	}
+.w3-content{max-width:980px}
+.w3-red,.w3-hover-red:hover{
+	color:#190707!important;background-color:#f5f5dc!important;
+	}
+.example input[type=text] {
+	
+  margin-top: 0px;
+  margin-left:-5px;
+  margin-right:2px;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius:20px;
+}
+
+.example button {
+  float: left;
+  width: 20%;
+  padding: 0px ;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius:20px;
+}
+.example button{
+	
+	font-size: 30%;
+}
+.example button:hover {
+  background: #0b7dda;
+}
+
+.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.captcha{
+	float:left;
+	width: 80%;
+}
+.Refresh{
+	padding-top:8%;
+	padding-left:5%;
+	float: left; 
+}
+.checkbox{
+	clear: all;
+	float: left;
+}
+	/* float:left;
+	width: 90%;
+} */
+.gen input{
+	clear: all;
+	float: right;
+	width: 45%;
+}
+
+.cap{
+	width: 45%;
+}
+.Social{
+	background-color:#444444 ;
+}
+.Social a{
+	color: white;
+	padding-right: 3%;
+	padding-top: .7em;
+	border-radius:100%;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  transform: rotate(270deg);
+  background-color: #51CA0C; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
+.book1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+.test1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+
+  .book1 {
+    width: 100%;
+  }
+  .test1{
+    width: 100%;
+  }
+  .data{
+	  width:100%;
+  }
+  
+} */
+
+
+
+
+
+
+
+
+
+
+.footer{
+	height:auto;
+	background-color:#F7F7F7;
+	padding: 0px 20px 20px 20px;
+	text-align:center;
+}
+.footer a{
+	padding:5px;
+	color:black;
+	text-decoration: none; 
+}
+.footer a:hover{
+	color: #1ABC9C;
+	text-decoration: none;
+}
+#footerlogo{
+	width:50px;
+	height:50px;
+	
+	
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #AED6F1 ;
+  color: black;
+  font-size:15px;
+   font-weight:bold;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2874A6;
+}
+
+
+#column1{
+	width: 70%;
+	padding: 20px 50px;
+	float:left;
+	background-color:#2874A6;
+	}
+.consultant h1{
+	color:#52BE80;
+}
+.consultant span{
+	color:#D5DBDB;
+}
+.data input{
+	float:left;
+	width: 45%;
+	margin-right: 4%;	
+} 
+.data select{
+
+
+	float:left;
+	width: 45%;
+	margin-right: 4%;	
+}
+.data textarea{
+	float:left;	
+	width: 45%;
+	margin-top:1.25%;
+	margin-right: 4%;
+}
+
+#left select{ 
+	width: 100%;
+}
+#column1 input{
+	float: left;
+}
+#column1 label{
+	float: left;
+	width: 43%
+	
+}
+.submit input{
+	clear:all;
+	float: right;
+	margin-right:6%;
+	width: 25%;
+	background-color:#5DADE2;
+	
+}
+.submit{
+	color: #5DADE2;
+}
+.column2{
+background-color:#444444;
+color:white;}
+.description{
+text-align:center;
+}
+
+	* {
+  box-sizing: border-box;
+}
+.roww,.row{
+	height:auto;}
+.roww:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+	
+/* Create two equal columns that floats next to each other */
+#column1 {
+  float: left;
+  color:white;
+  width: 70%;
+  padding: 10px;
+  height:450px;
+   /* Should be removed. Only for demonstration */
+  background-image:url("../img/images.jfif");
+}
+.column2 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height:450px;
+  /* Should be removed. Only for demonstration */
+}
+.column2 p{
+	font-size:90%;
+}
+/* Clear floats after the columns */
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+	.row:after {
+  content: "";
+  display: table;
+
+}
+
+.wrapper i{
+	
+  float:right;
+  align-items: right;
+  height: auto;
+  margin-top:5px;
+  margin-right:10px;
+}
+#num{
+	float:right;
+	margin-top:2%;
+	padding-right:10px;
+
+}
+.flip-card{
+	margin:0;
+}
+
+#r1{
+	width:95%;
+	height:95%;
+	border-radius:50%;
+	padding-bottom:10%
+}
+	#left,.right,.book1,.test1{
+		height:auto;
+	}
+  #column1 {
+    width: 100%;
+	height:auto;}
+	
+  .column2{width:100%;
+  height:auto;
+  }
+.data input{
+	float:left;
+	width: 100%;
+	margin-right:0;
+} 
+.data select{
+	margin-right:0;
+	float:left;
+	width: 100%;
+	
+}
+.data textarea{
+	margin-right:0;
+	float:left;	
+	width: 100%;
+	margin-top:1.25%;
+}
+#column1 label{
+	float: left;
+	width: 94%
+	
+}
+.submit input{
+	clear:all;
+	float: right;
+	margin-right:36%;
+	width: 30%;
+	background-color:#5DADE2;
+	
+}
+.submit{
+	color: #5DADE2;
+}
+
+#logo{
+    margin-left: 15%;
+	width:70%;
+}
+.btn {
+  position: absolute;
+  top: 15%;
+left: 40%;}
+ 
+.btn2 {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+ }
+} */
+#b{
+color:#61B853;
+font-size:150%;}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ 
+ 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 39px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  background-color:black;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 40px;
+  background-color: #333;
+  font-family: inherit;
+  margin: 0px;
+  margin-bottom:0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F0FFFF;
+  /* min-width: 172Px; */
+  /* margin-top:-5px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+  
+  
+ 
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+/* @media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+} */
+
+
+
+
+
+
