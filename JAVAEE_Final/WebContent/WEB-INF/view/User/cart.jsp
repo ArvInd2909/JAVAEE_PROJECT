@@ -48,7 +48,7 @@
       <div class="item">
             
             <div class="buttons">
-            <span class="delete-btn" onclick="location='cartdelete.html?id=${p.productId}'"></span>
+            <span class="delete-btn" onclick="location='cartdelete.html?id=${p.cartId}'"></span>
             <span class="like-btn"></span>
             </div>
             <div class="image">

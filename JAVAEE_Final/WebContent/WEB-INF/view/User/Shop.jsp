@@ -116,7 +116,7 @@
                 <p><button style="background-color:#1FF4AD;"><a href="addTocart.html?id=${i.productId}" style="text-decoration: none; color:black">Add to Cart</a></button></p>
                 </c:when>
                	<c:otherwise>
-                <p><button style="background-color: red; color: black; font-weight: bolder;" onclick="deleteInve('${i.product_name}')">Out Of stock.. Click to Delete</button></p>
+                <p><button style="background-color: red; color: black; font-weight: bolder;">Out Of stock.. Click to Delete</button></p>
                 </c:otherwise>
                 </c:choose>
             </div>

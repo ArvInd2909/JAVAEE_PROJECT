@@ -162,7 +162,7 @@ public class ProductController
 		@RequestMapping(value="cartdelete.html",method=RequestMethod.GET)
 		public ModelAndView cartdelete(@ModelAttribute CartVO cartVo,@RequestParam("id") int i)
 		{
-			cartVo.setProductId(i);
+			cartVo.setCartId(i);
 			this.cartDao.Delete(cartVo);
 			return new ModelAndView("redirect:/cart.html");
 		}

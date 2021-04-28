@@ -62,9 +62,9 @@ public class RegController
 				else
 				{
 					String pass=("Confirm Password does not Match With Password!!!");
-				System.out.println(pass);
-				session.setAttribute("Cnf_pass", pass);
-				return new ModelAndView("redirect:loadreg.html");
+					System.out.println(pass);
+					session.setAttribute("Cnf_pass", pass);
+					return new ModelAndView("redirect:loadreg.html");
 				}
 			}
 }
