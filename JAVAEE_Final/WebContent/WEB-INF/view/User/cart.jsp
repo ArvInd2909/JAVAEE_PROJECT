@@ -1,3 +1,4 @@
+<%@page import="com.mysql.cj.Session"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
@@ -10,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>ElectroCloud</title> 
     <link rel="stylesheet" href="UserResources/css/cartstyle.css" media="screen" title="no title" charset="utf-8">
-    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous" charset="utf-8"></script>
     <script type="text/javascript" src="UserResources/Js/cart.js" charset="utf-8"></script>
     <!-- <meta name="robots" content="noindex,follow" /> -->
   </head>
@@ -18,7 +19,7 @@
     <div class="shopping-cart">
       <!-- Title -->
       <div class="title">
-        Shopping Bag
+        Shopping Bag | 		<a href="shop.html" style="text-decoration: none;">GO Back</a>
       </div>
       <div class="status">
         </br>
@@ -28,8 +29,21 @@
         <a href="shop.html" style="color: brown;">Continue Shopping...</a>
       </div>
       <!-- Product #1 -->
-      
-        
+     
+      <script type="text/javascript">
+      var Msg ='<%=session.getAttribute("Checkout")%>';
+	    if (Msg != "null") {
+			 function alertName(){
+				 $(".status").show();
+			        $(".item").hide();
+			        $(".total-price").hide();
+			        $("#btn").hide();
+			        $(".empty").hide();
+			 } 
+	 	}
+      </script>
+      <script type="text/javascript"> window.onload = alertName; </script>
+      <% session.removeAttribute("Checkout"); %>
         <c:forEach items="${Item}" var="p">
       <div class="item">
             
@@ -68,7 +82,7 @@
 		        </div>
 		        
 		        <div id="btn">
-		            <button class="button button1">Proceed To Checkout</button>
+		            <button class="button button1" onclick="location='checkout.html'">Proceed To Checkout</button>
 		        </div>
 	        </c:when>
         	<c:otherwise>

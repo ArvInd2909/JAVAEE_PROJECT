@@ -113,7 +113,7 @@
 			<p>&copy; All Rights Reserved ElectroMart <br> Powered by CSAT ROCKERS
 </p>
 	    </small>
-		<img id="footerlogo" src="images/flogo.png" alt="Influence Agency">
+		<img id="footerlogo" src="UserResources/images/flogo.png" alt="Influence Agency">
 	</div>  
 
 			

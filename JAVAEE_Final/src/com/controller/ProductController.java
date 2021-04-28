@@ -130,6 +130,7 @@ public class ProductController
 		public ModelAndView addCart(@ModelAttribute ProductVO productVo,@ModelAttribute CartVO cartVo, HttpSession session,@RequestParam("id") int i)
 		{
 			cartVo.setProductId(i);
+			
 			List ls=cartDao.getProductbyID(cartVo);
 			if(ls.size()==0) {
 			productVo.setProductId(i);
@@ -142,7 +143,11 @@ public class ProductController
 			cartVo.setQuantity(pR.getQuantity());
 			cartVo.setPr_image(pR.getImage());
 			this.cartDao.insert(cartVo);
-			return new ModelAndView("redirect:/shop.html");}
+			String s="Product Added in cart Successfully...";
+			session.setAttribute("cart", s);
+			return new ModelAndView("redirect:/shop.html");
+			
+			}
 			else {
 				String s="Product is Already in cart please Checkout...";
 				session.setAttribute("cart", s);
@@ -162,9 +167,13 @@ public class ProductController
 			return new ModelAndView("redirect:/cart.html");
 		}
 		@RequestMapping(value="checkout.html", method=RequestMethod.GET)
-		public ModelAndView Check(@ModelAttribute CartVO cartVo,@RequestParam("data") Map<Integer,String> updata) {
-			System.out.println("in Check");
-			
-			return new ModelAndView("redirect:/cart.html");
+		public ModelAndView Check(@ModelAttribute CartVO cartVo, HttpSession session) {
+			List ls=this.cartDao.getProduct(cartVo);
+			for(int i=0;i<ls.size();i++) {
+				CartVO cv=(CartVO)ls.get(i);
+				cartDao.Delete(cv);
+			}
+			session.setAttribute("Checkout", "Success");
+			return new ModelAndView("User/cart");
 		}
 }

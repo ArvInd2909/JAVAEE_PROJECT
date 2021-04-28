@@ -64,25 +64,5 @@ $(document).ready(function(){
   $('.like-btn').on('click', function() {
   $(this).toggleClass('is-active');
   });
-  $('.button1').on('click',function()
-  {
-	  var updateQnty=[];
-	  var requiredname=[];
-	  var updatedata=[];
-	  $("input[name='ordered_qnty']").each(function(){
-	    updateQnty.push($(this).val());
-	  })
-	  $('.item-name').each(function(){
-	    requiredname.push($(this).html());
-	  })
-	  console.log(updateQnty)
-	  console.log(requiredname)
-	  for(var i=0;i<requiredname.length;i++){
-	    updatedata.push({name:requiredname[i],quantity:updateQnty[i]})
-	  }
-	  console.log("near Window location");
-	  updata=JSON.stringify(updatedata);
-	  location.href = "checkout.html"+"?data="+updata;
-  });
   
 })

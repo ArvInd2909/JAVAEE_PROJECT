@@ -19,6 +19,16 @@ public class CartVO
 	{
 		@Id
 		@GeneratedValue(strategy=GenerationType.AUTO)
+		private int cartId;	
+	
+		public int getCartId() {
+			return cartId;
+		}
+
+		public void setCartId(int cartId) {
+			this.cartId = cartId;
+		}
+		@Column(name="productId")
 		private int productId;
 
 		@Column(name="product_name")

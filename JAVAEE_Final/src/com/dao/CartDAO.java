@@ -57,7 +57,7 @@ public class CartDAO
 			try {
 				Session session=sessionFactory.openSession();
 				
-				Query q=session.createQuery("from ProductVO where productID='"+cartVO.getProductId()+"'");
+				Query q=session.createQuery("from CartVO where productID='"+cartVO.getProductId()+"'");
 				
 				ls=q.list();
 				
